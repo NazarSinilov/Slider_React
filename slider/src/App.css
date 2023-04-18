@@ -1,0 +1,49 @@
+/* .mySwiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 600px;
+} */
+div.container {
+  background-image: url(https://gamerwall.pro/uploads/posts/2021-11/1637096233_1-gamerwall-pro-p-tekstura-pod-vodoi-oboi-na-zastavku-1.jpg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+div.swiper-button-prev::after,
+div.swiper-button-next::after,
+p {
+  color: white;
+}
+span.swiper-pagination-bullet {
+  background-color: yellow;
+}
+img {
+  border: 1px solid white;
+}
+
+.settings {
+  width: 600px;
+  height: 200px;
+  background-color:  aqua;
+  margin: 0 auto;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  margin: 4px 5px 0 5px;
+}
+
+label {
+  color: black;
+  font-size: 20px;
+}
