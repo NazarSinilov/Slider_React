@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+div.container {
+    background-image: url(https://w.forfun.com/fetch/57/57ae4ca43f20c93b8058664a957e4d5c.jpeg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slick-slider {
+    margin: 0 auto;
+    width: 500px;
+    height: 700px;
+    border: 1px solid white;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: white;
+    font-size: 40px;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-dots li button:before {
+    top: 20px;
+    font-size: 15px;
+    
+}
+
+.settings {
+    width: 600px;
+    height: 200px;
+    background-color: aqua;
+    margin: 0 auto;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-dots li {
+    margin: 0 40px;
+}
+.slick-dots {
+    bottom: -50px;
+}
+a img {
+    border: 1px solid white;
+}
+li.slick-active {
+    filter: brightness(100%);
+}
+li {
+    filter: brightness(50%);
+}

@@ -16,10 +16,6 @@ function App() {
 
   const swiperRef = useRef<any>(null);
 
-  console.log('swiperRef', swiperRef);
-  
-
- 
   const createBox = (state: boolean, setState: React.Dispatch<React.SetStateAction<boolean>>, name: string) => (
     <div className='row'>
       <input checked={state} onChange={() => setState(prev => !prev)} type='checkbox' className='box' name={name} id={name}/>
@@ -50,7 +46,6 @@ function App() {
             pauseOnMouseEnter: true,
           }}
           style={{  width: "600px", height: "100%"}}
-          //slidesPerView={1}
           centeredSlides={true}
           navigation={isNav}
           pagination= {isPags ? { clickable: true } : false} 
