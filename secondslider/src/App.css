@@ -8,13 +8,15 @@ div.container {
     height: 100vh;
     width: 100vw;
 }
+.flex-block{
+    display: flex;
+}
 
 .slick-slider {
     margin: 0 auto;
     width: 500px;
     height: 700px;
     border: 1px solid white;
-
 }
 
 h1 {

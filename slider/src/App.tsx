@@ -22,7 +22,7 @@ function App() {
       <label htmlFor={name} >{name}</label>
     </div>
   )
-
+  
   return (
     <div className='container'>
       <div
@@ -45,16 +45,16 @@ function App() {
             disableOnInteraction: true,
             pauseOnMouseEnter: true,
           }}
-          style={{  width: "600px", height: "100%"}}
+          className='container-swiper'
           centeredSlides={true}
           navigation={isNav}
           pagination= {isPags ? { clickable: true } : false} 
         >
           {slides.map((slide: {image : string, id: number}) =>
-            <SwiperSlide style={{"width": "auto", "textAlign": "center"}} key={slide.id}>
+            <SwiperSlide className='container-slide' key={slide.id}>
               <img src={slide.image} alt={slide.image}/>
               <p>Картинка {slide.id}</p>
-              <p style={{paddingBottom: "10px"}}>{slide.id}/{slides.length}</p>
+              <p className='padding-separate'>{slide.id}/{slides.length}</p>
             </SwiperSlide>)}
 
         </Swiper>
@@ -62,14 +62,21 @@ function App() {
 
       <div className='settings'>
         <h3>Settings</h3>
-        <div style={{display: "flex"}}>
+        <div className='flex-container '>
           {createBox(isLoop, setIsLoop, "loop")}
           {createBox(isNav, setIsNav, "nav")}
           {createBox(isPags, setIsPags, "pags")}
         </div>
         <div className='row'>
           <label htmlFor='delay'>delay</label>
-          <input onChange={(e) => setInputValue(e.target.value)} type='number' className='box' name="delay" id="delay" placeholder='default: 5000ms '/>
+          <input 
+            onChange={(e) => setInputValue(e.target.value)} 
+            type='number' 
+            className='box' 
+            name="delay" 
+            id="delay" 
+            placeholder='default: 5000ms'
+          />
           <span>ms</span>
          </div>
       </div>

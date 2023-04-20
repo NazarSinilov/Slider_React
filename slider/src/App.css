@@ -15,7 +15,20 @@ span.swiper-pagination-bullet {
 img {
   border: 1px solid white;
 }
-
+.container-swiper {
+  width: 600px;
+  height: 100%;
+}
+.container-slide {
+  width: auto;
+  text-align: center;
+}
+.flex-container {
+  display: flex;
+}
+.padding-separate {
+  padding-bottom: 10px;
+}
 .settings {
   width: 600px;
   height: 200px;

@@ -55,7 +55,7 @@ function App() {
       </Slider>
       <div className='settings'>
         <h3>Settings</h3>
-        <div style={{display: "flex"}}>
+        <div className='flex-block'>
           {createBox(isLoop, setIsLoop, "loop")}
           {createBox(isNav, setIsNav, "nav")}
           {createBox(isPags, setIsPags, "pags")}
@@ -72,4 +72,3 @@ function App() {
 }
 
 export default App;
-
